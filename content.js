@@ -24,31 +24,31 @@ const SITE_CONTENT = {
       title: "Ánh mắt đầu tiên",
       text: "Một buổi chiều rất bình thường bỗng trở nên đặc biệt vì có Huệ xuất hiện. Ai ngờ đó lại là khởi đầu của một hành trình dài đến vậy.",
       // Dán link ảnh vào đây nếu muốn hiện ảnh thật, để trống "" nếu muốn dùng nền màu + số thứ tự
-      img: "/img/1.jpg",
+      img: "img/1.jpg",
     },
     {
       date: "Năm thứ nhất",
       title: "Lạc nhau giữa phố lạ",
       text: "Chúng ta cười suốt cả chặng đường chỉ vì đi sai lối. Từ đó mới biết, lạc đường cùng em vẫn vui hơn đi đúng đường một mình.",
-      img: "/img/2.jpg",
+      img: "img/2.jpg",
     },
     {
       date: "Năm thứ hai",
       title: "Pháo đài chăn gối",
       text: "Xây một pháo đài chăn trong ngày mưa bão và xem phim đến tận khuya. Những ngày bình dị như vậy hoá ra lại là kỷ niệm khó quên nhất.",
-      img: "/img/4.jpg",
+      img: "img/4.jpg",
     },
     {
       date: "Năm thứ ba",
       title: "Vượt qua sóng gió",
       text: "Có những lúc giận hờn, có những lúc mệt mỏi, nhưng cuối cùng vẫn chọn nắm tay nhau đi tiếp. Đó là lúc mới hiểu tình yêu này thật sự bền chặt.",
-      img: "/img/7.jpg",
+      img: "img/7.jpg",
     },
     {
       date: "Hôm nay — Tròn 3 năm",
       title: "Vẫn chọn nhau",
       text: "Sau tất cả, điều tuyệt vời nhất vẫn là mỗi ngày Hào đều được chọn Huệ. Cảm ơn em vì 3 năm đã qua, và hãy cùng nhau viết tiếp những năm tháng phía trước.",
-      img: "/img/8.jpg",
+      img: "img/8.jpg",
     },
   ],
 
