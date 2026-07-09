@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.1C0.3 8.6 2 5 5.6 5c2 0 3.4 1 4.4 2.4C11 6 12.4 5 14.4 5 18 5 19.7 8.6 22 11.9 19.5 16.4 12 21 12 21z" fill="#e8607a"/></svg>
+    <span id="siteLogo">Love Story</span>
+  </div>
+  <div class="nav-links">
+    <a href="#hero">Trang chủ</a>
+    <a href="#timeline">Kỷ niệm</a>
+    <a href="#letter">Lá thư</a>
+    <a href="#guestbook">Lưu bút</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="eyebrow">Câu chuyện của chúng mình</div>
+  <h1 id="heroTitle">Hành trình <em>tình yêu</em> của chúng ta</h1>
+  <p class="sub" id="heroSub">Từ lời chào đầu tiên đến mãi mãi về sau — mỗi khoảnh khắc đều đáng được lưu giữ.</p>
+
+  <div class="counter">
+    <div><div class="num" id="daysCount">0</div><div class="lbl">Ngày bên nhau</div></div>
+    <div><div class="num" id="yearsCount">0</div><div class="lbl">Năm yêu thương</div></div>
+  </div>
+
+  <button class="cta" onclick="document.getElementById('timeline').scrollIntoView()">Bắt đầu câu chuyện</button>
+
+  <div class="scroll-hint"><div class="line"></div>Cuộn xuống</div>
+</section>
+
+<section id="timeline">
+  <div class="sec-head">
+    <div class="eyebrow">Dòng thời gian</div>
+    <h2>Những khoảnh khắc chúng ta viết nên</h2>
+    <p>Mỗi kỷ niệm là một mắt xích trong sợi chỉ nối chúng ta lại với nhau.</p>
+  </div>
+  <div class="timeline-wrap">
+    <div class="thread"></div>
+    <div id="momentsList"></div>
+  </div>
+</section>
+
+<section id="reveal">
+  <div class="reveal-words" id="revealWords"></div>
+  
+  <div class="photo-cards" id="photoCards">
+    <div class="card">
+      <img src="/img/6.jpg" alt="Kỉ niệm 1">
+      <div class="card-desc">Ngày đầu tiên bên nhau ❤️</div>
+    </div>
+    <div class="card">
+      <img src="/img/5.jpg" alt="Kỉ niệm 2">
+      <div class="card-desc">Chuyến đi xa đầu tiên 🌊</div>
+    </div>
+    <div class="card">
+      <img src="/img/3.jpg" alt="Kỉ niệm 3">
+      <div class="card-desc">Mãi bên nhau bạn nhé ✨</div>
+    </div>
+  </div>
+
+  <div class="hint" id="revealHint">Chạm để xem lại</div>
+  <button class="replay-btn" onclick="playReveal()">▶ Xem lại</button>
+</section>
+
+<section id="letter">
+  <div class="sec-head">
+    <div class="eyebrow">Lá thư</div>
+    <h2 id="letterHeading">Gửi người tôi thương</h2>
+  </div>
+  <div class="letter-card">
+    <div class="ribbon" id="letterRibbon">KỶ NIỆM</div>
+    <div class="greet" id="letterGreet">Gửi em yêu,</div>
+    <div class="letter-body" id="letterBody"></div>
+    <div class="letter-sign" id="letterSign">— Người yêu em</div>
+  </div>
+</section>
+
+<section id="guestbook">
+  <div class="sec-head">
+    <div class="eyebrow">Sổ lưu bút</div>
+    <h2>Lời chúc từ mọi người</h2>
+    <p>Để lại một lời nhắn yêu thương — form sẽ mở email để gửi cho chủ trang.</p>
+  </div>
+  <div class="gb-form">
+    <input id="gbName" placeholder="Tên của bạn">
+    <textarea id="gbMsg" rows="3" placeholder="Viết lời chúc của bạn..."></textarea>
+    <button onclick="submitGuestbook()">Gửi lời chúc</button>
+  </div>
+  <div class="gb-list" id="gbList">
+    <div class="gb-empty">Đang tải lời chúc...</div>
+  </div>
+</section>
+
+<footer>Được tạo bằng ♥ — trang web kỷ niệm riêng của hai bạn</footer>
+
+<audio id="bgMusic" loop>
+    <source src="music/bg.mp3" type="audio/mpeg">
+</audio>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
